@@ -86,19 +86,19 @@ yesButton.addEventListener("click", function () {
   yesAudio.play();
   // 先创建基础 HTML 结构
   document.body.innerHTML = `
-        <div class="yes-screen" style = "z-index:-1;">
-            <h1 class="yes-text" style = "z-index: 999; color =rgb(24, 24, 24)"></h1>
-            <img src="images/hug.png" alt="拥抱" class="yes-image" style = "z-index: 999;">
-                    <video
+  <div class="yes-screen" style="z-index: 1;">
+    <h1 class="yes-text" style="z-index: 2; color: rgb(24, 24, 24);"></h1>
+    <img src="images/hug.png" alt="拥抱" class="yes-image" style="z-index: 2;">
+    <video
       id="loveVideo"
       width="100%"
-      height="auto"
+      height="100%"
       style="
         position: absolute;
         top: 0;
         left: 0;
         opacity: 0.5;
-        z-index: 0;
+        z-index: -1;
       "
       autoplay
       loop
@@ -108,11 +108,9 @@ yesButton.addEventListener("click", function () {
         type="video/mp4"
       />
       您的浏览器不支持播放此视频。
-
     </video>
-        </div>
-
-    `;
+  </div>
+`;
 
   // 确保用户名安全地插入
   document.querySelector(".yes-text").innerText = loveTest;
