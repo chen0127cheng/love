@@ -86,7 +86,7 @@ yesButton.addEventListener("click", function () {
   yesAudio.play();
   // 先创建基础 HTML 结构
   document.body.innerHTML = `
-  <div class="yes-screen" style="z-index: 1;">
+  <div class="yes-screen" style="z-index: 1; position: relative;">
     <h1 class="yes-text" style="z-index: 2; color: rgb(24, 24, 24);"></h1>
     <img src="images/hug.png" alt="拥抱" class="yes-image" style="z-index: 2;">
     <video
