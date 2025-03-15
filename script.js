@@ -91,9 +91,9 @@ yesButton.addEventListener("click", function () {
     <img src="images/hug.png" alt="拥抱" class="yes-image" style="z-index: 2;">
     <video
       id="loveVideo"
-      width="100%"
-      height="100%"
       style="
+        width="100vw"
+        height="100vh"
         position: absolute;
         top: 0;
         left: 0;
@@ -109,7 +109,7 @@ yesButton.addEventListener("click", function () {
       />
       您的浏览器不支持播放此视频。
     </video>
-    
+
   </div>
 `;
 
